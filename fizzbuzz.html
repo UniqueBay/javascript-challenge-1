@@ -63,6 +63,27 @@
       while (Number.isNaN(range)) {
         range = prompt("Number not valid \nEnter valid Number");
       }
+
+      // To loop through the number range inputted
+      for (var i = 1; i <= range; i++) {
+        // To check if a number is divisible by both 3 and 5 (15).
+        if (i % 15 == 0) {
+          // To print FizzBuzz if true
+          console.log("FizzBuzz");
+
+          // To check if a number is divisible by 3.
+        } else if (i % 3 == 0) {
+          // To print Fizz if true.
+          console.log("Fizz");
+
+          // To check if a number is divisible by 5.
+        } else if (i % 5 == 0) {
+          // To print Buzz if true
+          console.log("Buzz");
+
+          // To print the number if it does not meet any of the conditions above.
+        } else console.log(i);
+      }
     </script>
   </body>
 </html>
