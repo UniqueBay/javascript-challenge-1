@@ -28,9 +28,11 @@
     <h1>
       This is a challenge that prints out
       <strong>Fizz</strong>
-      for numbers divisible by 3 and
+      for numbers divisible by 3,
       <strong>Buzz</strong>
-      for numbers divisible by 5.!
+      for numbers divisible by 5 and
+      <strong>FizzBuzz</strong>
+      for numbers divisible by both 3 and 5.!
     </h1>
     <h3>To view result kindly do the following</h3>
     <li>
@@ -47,11 +49,20 @@
       </ul>
       <ul>
         Click on the Console option to view result. Note: Result displayed is in
-        range of 1-100.
+        range you input.
       </ul>
     </li>
     <script>
-      
+      // Get user input
+      var range = prompt(`Input your range of number to check`);
+
+      // Convert user input into number
+      range = Number(range);
+
+      // Check if input is a valid number.
+      while (Number.isNaN(range)) {
+        range = prompt("Number not valid \nEnter valid Number");
+      }
     </script>
   </body>
 </html>
