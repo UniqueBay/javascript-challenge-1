@@ -47,6 +47,28 @@
       </ul>
     </li>
 
-    <script></script>
+    <script>
+      // Take the users desired height size
+      var height = prompt(`Input your range of number to check`);
+
+      // Convert user input into number
+      height = Number(height);
+
+      // Check if input is a valid number.
+      while (Number.isNaN(height)) {
+        height = prompt("Number not valid \nEnter valid Number");
+      }
+
+      // Take the users desired breath size
+      var breath = prompt(`Input your range of number to check`);
+
+      // Convert user input into number
+      breath = Number(breath);
+
+      // Check if input is a valid number.
+      while (Number.isNaN(breath)) {
+        breath = prompt("Number not valid \nEnter valid Number");
+      }
+    </script>
   </body>
 </html>
