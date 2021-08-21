@@ -78,9 +78,9 @@
         // A loop to set the numbers of character/colum(breath)
         for (var j = 1; j <= breath; j++) {
           // To check if the height is divisible by 2.
-          if (i % 2 === 0) {
+          if ((i + j) % 2 === 0) {
             // To print "# " for even rows eight times.
-            board += "# ";
+            board += " ";
             // To print " #" for odd rows eight times.
           } else {
             board += " #";
